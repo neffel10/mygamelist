@@ -1,0 +1,77 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Sign-Up</title>
+    <link rel="stylesheet" href="../styles/login.css">
+	<link href="../styles/toplistalogin.css" rel="stylesheet">
+	<link href="../styles/search-bar.css" rel="stylesheet">
+	<link href="../styles/structurelogin.css" rel="stylesheet">
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+	<script src="form.js"></script>
+
+  </head>
+  
+  
+  <body>
+  
+  <header>
+	<nav class="globalnav" role="navigation" aria-label="Global" dir="ltr">
+		
+			<ul id="topnav" class="toplista">
+				<li>
+					<a href="index.html">
+							<span>Inicio</span>
+						</a>
+				</li>
+				
+				<li>
+					<a href="productos.html">
+							<span class="ac-gn-link-text">Productos</span>
+						</a>
+				</li>
+				
+				<li>
+					<a href="contacto.html">
+							<span>Contacto</span>
+						</a>
+				</li>
+				
+				
+				<li>
+					<a href="soporte.html">
+							<span>Soporte</span>
+					</a>
+				</li>
+				
+				
+			</ul>
+	
+	</nav>
+ 
+
+	</header>
+	
+    <section class="form-login">
+		
+		
+      <h5>Inicia sesión</h5>
+      <input class="controls" id="email" type="text" name="usuario" value="" placeholder="Usuario">
+      <input class="controls" id="password" type="password" name="contrasena" value="" placeholder="Contraseña">
+	  <input class="controls" id="gamertag" type="text" name="gamertag" value="" placeholder="Gamertag">
+	  <input class="buttons" onclick= "signUp()" id="signUp" type="submit" name="" value="Registrarse">
+
+	  <!--
+      <p><a href="#">¿Olvidaste la contraseña?</a></p>-->
+
+    </section>
+
+  </body>
+</html>

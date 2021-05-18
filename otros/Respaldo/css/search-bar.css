@@ -1,0 +1,51 @@
+.buscar-btn > i {
+ font-size: 16px; /*El tamaño del icono de la lupa*/
+}
+
+/*Con esta tontada le pongo un circulo blanco atras a la lupa*/
+/*.buscar-caja:hover > .buscar-btn {
+ background: white;
+ color: white;
+}*/
+
+/*Propiedades del boton lupa*/
+
+.buscar-btn {
+ 
+ border-radius: 50%; /*Lo redondeado del icono*/
+ background: none; /*El fondo sin seleccionar*/
+ justify-content: center; /*Ajusta la lupa a la mitad de la caja hablando horizontalmente*/
+  
+ /*Alinea al centro de la caja la lupa en sentido verticalmente hablando*/
+ align-items: center;
+ 
+ transition: 0.4s;
+ cursor: pointer; /*Transforma el cursor a manita, ideal para busquedas*/
+ display: flex; /*Se desplaza bien la lupa*/
+}
+
+/*Expande la barra*/
+
+.buscar-caja:hover > .buscar-txt {
+ width: 140px; /*Ajusta la anchura de la barra buscadora*/
+ padding: 10px; /*Este tiene que ser igual al padding de las
+ propiedades de la lupa para que no se desajuste todo*/
+ 
+}
+
+/*Propiedades de la barra de busqueda*/
+
+input.buscar-txt {
+ border: none; /*Le da un borde transparente*/
+ background: transparent; /*Le da fondo transparente a la caja*/
+ outline: none; /*Le quita el resaltado al borde de la caja*/
+ float: left; /*Adjust the bar to the left of the search button*/
+ color: white; /*Color del texto al escribir*/
+ font-size: 16px; /*Tamaño del texto al escribir*/
+ text-align: left; /*Align of the text when writing*/
+ transition: 0.4s;
+ 
+ /*The next 2 parameters do the trick for the bar to hide*/
+ height:0px;
+ width: 0px;
+}

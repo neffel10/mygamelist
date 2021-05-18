@@ -1,0 +1,56 @@
+	
+	
+	/*LE DA HORIZONTALIDAD A LA TOP BAR*/
+	.toplista li {
+	  float: left; /*Esto es lo que sirve para darle horizontalidad*/
+	  display: block; /*Se muestran como bloques y elimina el punto de las listas*/
+	  padding: 16px; /*Es una especie de interlineado*/
+	}
+	
+	/*THE LIST OF LINKS -- CONTAINER UL?*/ 
+	.toplista {
+
+		position: fixed; /*Ajusta la posición a como yo la coloque 
+		en los parametros siguientes*/
+		
+	    top: 3.5%; /*Me ajusta posicion vertical*/
+	    left: 50%; /*Me ajusta posicion horizontal*/
+	    transform: translate(-50%, -50%); /*Translada la posicion 
+		vertical y horizontal en 50% 
+		conforme al width y height de la pantalla?*/
+
+	}
+	
+	
+	/*ESTO SIRVE PARA DARLE ESTILOS A LAS LETRAS DE LA TOPNAVBAR Y
+	LES QUITA EL ESTILO DE LINK Y LES DA UN COLOR GRIS*/
+	
+	#topnav li a {
+	  text-decoration: none;
+	  color: C0C0C0;
+	  text-align: center;
+	}
+	
+	#topnav li>a:hover {
+	  text-decoration: none;
+	  color: white;
+	  
+	}
+	
+	/*UL VERTICAL*/ 
+	
+	li>ul{
+		display:none;
+	}
+	
+	li:hover>ul{
+		display:block;
+		
+		/*ESTO SOBREESCRIBE LOS VALORES DE LAS UL TRADICIONAL MIAS*/
+		position: absolute;
+		transform: translate(-40%,14%);
+		background-color:rgba(0,0,0,0.9);
+	}
+
+	
+	

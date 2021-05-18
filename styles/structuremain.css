@@ -1,0 +1,162 @@
+/* GIVES PADDING AND MARGIN 0 TO ALL ELEMENTS IN THE PAGE*/
+	*{
+		padding:0;
+		margin:0;
+		
+	}
+	
+/*Solo es el color del fondo*/
+	html{
+		background-color: #333333;
+		margin: 0;
+		padding: 0;
+		height:100%;
+		position: relative;
+	}
+	
+/*THE BAR NAVIGATOR, JUST DESIGN*/
+	
+	/*ES LA BARRA NEGRA DE ARRIBA - NEEDED*/
+	header{
+		background-color: #333333;
+		width:100%;
+		height:7%;
+		background: rgba(0,0,0,0.6);
+		position: fixed;
+		z-index: 100;
+		top: 0;
+	}
+	
+/*MAIN CONTENT LIKE THE SLIDER*/
+	main{
+	float: left;
+	width: 100%;
+	background-color: #333333;
+	position:absolute;
+	top: 7%;
+	height:100%;
+	}
+	
+/*the article area*/
+	
+	blog{
+		float: left;
+		width: 100%;
+		height: 1000px;
+		background-color: #333333;
+		position:relative;
+		top: 348;
+	}
+	
+/*Images in articles*/
+	.blog-image{
+		width:900px;
+		margin-left:10%;
+	}
+	
+/*main titles*/
+	article h1{
+		margin-left:10%;
+		margin-top:20px;
+		margin-bottom:20px;
+		text-align:left;
+		/*text-shadow: 2px 2px black;*/
+	}
+
+/*I use this one for the TRENDING TITLE*/
+	h2{
+		margin-top:40px;
+		margin-left:10%;
+		margin-bottom:30px;
+		
+		text-align:left;
+		color: BBBBBB;
+		font-family:arial;
+		font-weight: lighter;
+		/*text-shadow: 2px 2px black;*/
+	}
+	
+/*paragraphs*/
+	p{
+		color: white;
+		font-family:arial;
+		font-weight: lighter;
+		margin-left: 10%;
+		margin-right: 40%;
+		margin-bottom: 60px;
+	}
+	
+/*Links in articles*/
+	article h1 a{
+		text-decoration:none;
+		font-size:20px;
+		color: white;
+		font-family: Arial,sans-serif;
+		font-weight:bold;
+	}
+	
+/*Colors links read more*/
+	.read-more{
+		margin-left: 5px;
+		text-decoration:none;
+		color: rgba(158, 49, 170, 1);
+	}
+	
+/*ASIDES - IN THIS CASE THIS ONE IS FOR LATEST UPDATES*/
+
+/*container of latest updates*/
+	aside{
+		position: absolute;
+		top: 395;
+		right:0;
+		float: right;
+		width: 20%;
+		height: 800px;
+		background-color: #222222;
+		overflow: hidden;
+		z-index:1;
+	}
+
+/*Titles in aside, in this case "Latest Updates"*/
+	aside h1{
+		font-size:20px;
+		text-align:center;
+		color: rgba(158, 49, 170, 1);
+		margin: 20px;
+		font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica",Arial,sans-serif;
+		font-weight:bolder;
+	}
+	
+/*This are the image-links in latest updates - IMPORTANT*/
+	
+
+	.popular{
+		width:200px;
+		margin-left: 60px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	
+	.popular:hover{
+		/*background: rgba(4,4,4,0.9);*/
+		opacity: 0.6;
+	}
+	
+/*FOOTER THE BOTTOM OF THE PAGE, NOT READY YET*/
+	
+	.footer{
+	  position: fixed;
+	  background-color:red;
+	  height:300px;
+	  bottom:0;
+	}
+	
+/*It is supossed to erase the dots of a list UL*/
+	#trending{
+		list-style-type:none;
+	}
+
+
+
+	
